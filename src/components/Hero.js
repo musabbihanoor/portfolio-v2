@@ -25,13 +25,13 @@ const Hero = ({ typing, setTyping }) => {
   return (
     <Fragment>
       <div
-        className={`h-[500px] flex items-center justify-between px-20 pt-32 pb-0 text-text_light bg-purple transition-all duration-150 ease-out hover:ease-in `}
+        className={`md:h-[500px] h-[400px] flex items-center justify-center md:justify-between md:px-20 px-16 md:pt-32 p-32 pb-0 text-text_light bg-purple transition-all duration-150 ease-out hover:ease-in `}
       >
         <div className="bg-[url('/blobs.svg')] h-screen w-screen fixed z-10 left-0 opacity-[.1]"></div>
         <div className="relative z-20">
           <h1
-            className={`text-5xl font-semibold w-[500px] transform transition-all duration-700 ease-in hover:ease-in ${
-              typing ? "translate-x-1/2" : "translate-x-0"
+            className={`md:text-5xl text-3xl font-semibold md:w-[500px] transform transition-all duration-700 ease-in hover:ease-in ${
+              typing ? "md:translate-x-1/2" : "translate-x-0"
             }`}
           >
             <Typewriter
@@ -54,7 +54,7 @@ const Hero = ({ typing, setTyping }) => {
               }}
             />
             {showRobo && (
-              <div className="flex gap-3 mt-10">
+              <div className="flex gap-3 md:justify-start justify-center mt-10">
                 {data.map((x, i) => (
                   <motion.div
                     initial={{ opacity: 0, x: -(i * 50) }}
@@ -85,9 +85,11 @@ const Hero = ({ typing, setTyping }) => {
           </h1>
         </div>
         {showRobo && (
-          <AnimatedDiv>
-            <Lottie animationData={GreetAnimation} />
-          </AnimatedDiv>
+          <div className="hidden md:block">
+            <AnimatedDiv>
+              <Lottie animationData={GreetAnimation} />
+            </AnimatedDiv>
+          </div>
         )}
       </div>
       <div className="image-container">

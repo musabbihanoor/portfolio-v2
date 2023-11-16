@@ -18,17 +18,26 @@ const About = ({ typing }) => {
   }, [typing]);
 
   return (
-    <div className="relative z-20 flex items-start justify-center p-20 text-text_dark">
+    <div className="relative z-20 flex items-start justify-center md:p-20 p-10 text-text_dark">
       {showContent && (
         <>
+          <div className="hidden md:block">
+            <AnimatedDiv>
+              <Lottie animationData={GamingAnimation} />
+            </AnimatedDiv>
+          </div>
           <AnimatedDiv>
-            <Lottie animationData={GamingAnimation} />
-          </AnimatedDiv>
-          <AnimatedDiv>
-            <h1 className="text-3xl font-semibold text-purple mb-5">
-              / about_me
-            </h1>
-            <p className="w-[550px] text-lg">
+            <div className="flex items-end md:mb-0 mb-10">
+              <div className="md:hidden block w-28">
+                <AnimatedDiv>
+                  <Lottie animationData={GamingAnimation} />
+                </AnimatedDiv>
+              </div>
+              <h1 className="text-3xl font-semibold text-purple mb-5">
+                / about_me
+              </h1>
+            </div>
+            <p className="md:w-[550px] w-full text-lg">
               I started my journey as a web developer in 2021 and proceeded to
               specialize in{" "}
               <span className="text-purple">frontend development</span> with
@@ -87,7 +96,7 @@ const About = ({ typing }) => {
               </span>
             </div>
             <br />
-            <p className="w-[550px] text-lg">
+            <p className="md:w-[550px] w-full text-lg">
               In my spare time I love to play games. I am enjoying{" "}
               <span className="text-purple">Assasin's Creed</span> and{" "}
               <span className="text-purple">The Backrooms</span> these days.
