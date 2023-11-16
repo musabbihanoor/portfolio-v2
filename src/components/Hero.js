@@ -25,9 +25,9 @@ const Hero = ({ typing, setTyping }) => {
   return (
     <Fragment>
       <div
-        className={`md:h-[500px] h-[400px] flex items-center justify-center md:justify-between md:px-20 px-16 md:pt-32 p-32 pb-0 text-text_light bg-purple transition-all duration-150 ease-out hover:ease-in `}
+        className={`relative z-10 md:h-[500px] h-[400px] flex items-center justify-center md:justify-between md:px-20 px-16 md:pt-32 p-32 pb-0 text-text_light bg-purple transition-all duration-150 ease-out hover:ease-in `}
       >
-        <div className="bg-[url('/blobs.svg')] h-screen w-screen fixed z-10 left-0 opacity-[.1]"></div>
+        <div className="bg-no-repeat bg-center bg-[url('/blobs.svg')] h-screen w-screen absolute z-10 left-0 opacity-[.1]"></div>
         <div className="relative z-20">
           <h1
             className={`md:text-5xl text-3xl font-semibold md:w-[500px] transform transition-all duration-700 ease-in hover:ease-in ${
@@ -92,7 +92,7 @@ const Hero = ({ typing, setTyping }) => {
           </div>
         )}
       </div>
-      <div className="image-container">
+      <div className="image-container relative z-[2]">
         <Image
           src="/wave-up.svg"
           alt="wave"

@@ -12,7 +12,7 @@ export default function Document() {
           content="Musabbiha, Frontend, Web, React, Angular"
         />
       </Head>
-      <body>
+      <body className="bg-bg_light dark:bg-bg_dark text-text_dark dark:text-text_light">
         <Main />
         <NextScript />
       </body>

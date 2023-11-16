@@ -15,6 +15,7 @@ export default function Home() {
 
   return (
     <div className={`${poppins.className}`}>
+      <div className="bg-[url('/hexagon-bg.svg')] h-screen w-screen fixed z-[1] opacity-[.1]"></div>
       <Hero typing={typing} setTyping={setTyping} />
       <About typing={typing} />
     </div>
