@@ -17,15 +17,15 @@ export const data = [
     icon: <AiOutlineMail />,
     link: "mailto:musabbihanoor33@gmail.com",
   },
+  // {
+  //   name: "Phone Number",
+  //   icon: <AiOutlinePhone />,
+  //   value: "+92 321 2273638",
+  // },
   {
-    name: "Phone Number",
-    icon: <AiOutlinePhone />,
-    value: "+92 321 2273638",
-  },
-  {
-    name: "Skype ID",
+    name: "Skype",
     icon: <AiOutlineSkype />,
-    value: "musabbihanoor33",
+    link: "skype:musabbihanoor33",
   },
   {
     name: "LinkedIn",

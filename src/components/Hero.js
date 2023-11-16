@@ -1,13 +1,15 @@
 "use-client";
 
 import { Fragment, useEffect, useState } from "react";
+import Image from "next/image";
 
 import GreetAnimation from "@/animations/Greetings.json";
 import Lottie from "lottie-react";
 
 import Typewriter from "typewriter-effect";
 import AnimatedDiv from "@/layout/AnimatedDiv";
-import Image from "next/image";
+import { motion } from "framer-motion";
+
 import { data } from "@/data/social";
 
 const Hero = ({ typing, setTyping }) => {
@@ -23,10 +25,10 @@ const Hero = ({ typing, setTyping }) => {
   return (
     <Fragment>
       <div
-        className={`h-[500px] flex items-center justify-between p-20 text-text_light bg-purple transition-all duration-150 ease-out hover:ease-in `}
+        className={`h-[500px] flex items-center justify-between px-20 pt-32 pb-0 text-text_light bg-purple transition-all duration-150 ease-out hover:ease-in `}
       >
-        <div className="bg-[url('/blobs.svg')] h-screen w-screen fixed z-[20] opacity-[.1]"></div>
-        <div>
+        <div className="bg-[url('/blobs.svg')] h-screen w-screen fixed z-10 left-0 opacity-[.1]"></div>
+        <div className="relative z-20">
           <h1
             className={`text-5xl font-semibold w-[500px] transform transition-all duration-700 ease-in hover:ease-in ${
               typing ? "translate-x-1/2" : "translate-x-0"
@@ -54,14 +56,29 @@ const Hero = ({ typing, setTyping }) => {
             {showRobo && (
               <div className="flex gap-3 mt-10">
                 {data.map((x, i) => (
-                  <>
+                  <motion.div
+                    initial={{ opacity: 0, x: -(i * 50) }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1 }}
+                  >
                     {x.link && (
-                      <a href={x.link} target="_blank">
+                      <a
+                        href={x.link}
+                        className="cursor-pointer hover:text-light_purple transition-all duration-300 ease-in"
+                        target="_blank"
+                      >
                         {x.icon}
                       </a>
                     )}
-                    {x.value && <button>{x.icon}</button>}
-                  </>
+                    {x.value && (
+                      <button
+                        onClick={() => copyToClipboard(x.value, x.name)}
+                        className="cursor-pointer hover:text-light_purple transition-all duration-300 ease-in"
+                      >
+                        {x.icon}
+                      </button>
+                    )}
+                  </motion.div>
                 ))}
               </div>
             )}

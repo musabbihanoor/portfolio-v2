@@ -18,7 +18,7 @@ const About = ({ typing }) => {
   }, [typing]);
 
   return (
-    <div className="flex items-start justify-center p-20 text-text_dark">
+    <div className="relative z-20 flex items-start justify-center p-20 text-text_dark">
       {showContent && (
         <>
           <AnimatedDiv>
