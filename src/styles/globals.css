@@ -30,7 +30,7 @@ html {
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
-  z-index: 0;
+  z-index: 20;
 }
 .cursor::after {
   content: "";

@@ -1,35 +1,36 @@
 export const data = [
   {
-    name: "Goddard",
-    url: "https://beta.goddard-discovery.com/login",
-    image: "https://beta.goddard-discovery.com/assets/logo_min-9c1d9f7c.png",
-    stack: ["electronjs", "redux", "node"],
+    name: "Next Quest",
+    url: "https://nextquestup.com",
+    image: "/projects/NextQuest.png",
+    stack: ["react", "mobx", "tailwind", "node"],
     description:
-      "An advanced platform that uses AI to help researchers collect and analyze scientific documents instantly, increasing productivity through organizing literature surveys based on custom-relation types and knowledge graphs.",
+      "Facilitate meaningful connections between local musicians and their fanbase while fostering organic growth through data-driven insights.",
+  },
+  {
+    name: "Marvin",
+    createdAt: "DotsnPix",
+    url: "https://marvin.io",
+    image: "/projects/Marvin.png",
+    stack: ["react", "redux", "material-ui", "auth0"],
+    description:
+      "Marvin simplifies the process of creating multi-channel social media content,while providing powerful insights. Unleash creativity,foster collaboration, and achieve digital success!",
   },
   {
     name: "Foto Dino",
     url: "https://next.foto-dino.de",
-    image: "https://foto-dino.de/assets/icons/dino.png",
-    stack: ["nextjs", "reactjs", "mobx", "tailwind"],
+    image: "/projects/Fotodino.png",
+    stack: ["nextjs", "mobx", "tailwind"],
     description:
       "Event management web app for clients, photographers, editors, and admin in Germany. Features booking, portfolio reviews, tailored editing, and scalable performance. Built with React.",
   },
   {
-    name: "Hope Up",
-    url: "https://hopeup.net/",
-    image: "https://hopeup.net/wp-content/uploads/2022/12/Hopeup.Logo_.png",
-    stack: ["reactjs", "react-native", "redux", "bootstrap"],
-    description:
-      "Hope Up is all positive platform we’re users can post videos, support yourself and the community by buying and selling products, post classified ads and there’s Block Watch which shows users step by step instructions to turn a hood into a safe neighborhood.",
-  },
-  {
     name: "Directo",
-    url: "https://www.directoapp.com/",
-    image:
-      "https://www.directoapp.com/_next/image?url=%2Flogo_directoapp.webp&w=128&q=75",
-    stack: ["nextjs", "firebase", "redux"],
+    url: "https://.directoapp.com",
+    image: "/projects/Directo.png",
     description:
-      "A freelance marketplace that provides a comprehensive solution for buyers and sellers looking for an efficient, cost-effective, and secure freelance experience. ",
+      "A Web3 Space Where Collaboration, Service & Community Meet On The Block. An all in one playground for Blockchain creatives. Bring your ideas to life, and stay connected to the people and communities you enjoy.",
+    stack: ["next", "Metamask", "firebase", "notifications"],
+    madeAt: "CodeBusters Pro",
   },
 ];
