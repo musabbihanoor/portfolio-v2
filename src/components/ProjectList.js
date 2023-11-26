@@ -5,17 +5,7 @@ import React from "react";
 const ProjectList = () => {
   return (
     <div>
-      {/* <div className="bg-cover bg-center bg-[url('/blobs.svg')] h-screen w-screen absolute z-50 left-0 opacity-[.1]"></div> */}
-      {/* <div className="image-container relative z-[2]">
-        <Image
-          src="/wave-down.svg"
-          alt="wave"
-          width={500}
-          height={300}
-          layout="responsive"
-        />
-      </div> */}
-      <div className="relative z-30">
+      <div className="relative z-30 bg-[#eee]">
         {data.map((x, i) => (
           <div className="flex items-center">
             <div className="relative flex-1">
