@@ -7,7 +7,7 @@ import AnimatedDiv from "@/layout/AnimatedDiv";
 
 const About = () => {
   return (
-    <div className="bg-[#f8f8f8] relative z-10 flex items-start justify-center md:px-20 py-40 p-10">
+    <div className="bg-[#f8f8f8] relative z-10 flex items-start justify-center md:px-20 sm:py-40 p-10">
       <div className="hidden md:block">
         <AnimatedDiv>
           <Lottie animationData={GreetingAnimation} />
@@ -57,7 +57,7 @@ const About = () => {
           Here are few technologies I have been working with recently,
         </p>
 
-        <div className="grid grid-cols-3 gap-3 mt-5">
+        <div className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-5">
           <span className="flex items-center gap-2">
             <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
             JavaScript

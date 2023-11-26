@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${navbarColor} fixed flex justify-between w-full text-text_light md:p-8 p-5 text-xl z-30 transition-all duration-300 ease-in`}
+      className={`${navbarColor} fixed flex justify-between w-full text-black md:p-8 p-5 text-xl z-50 transition-all duration-300 ease-in`}
     >
       <div className="flex items-center gap-3">
         <img src="/robo-icon.svg" alt="icon" className="h-7 w-7" />
