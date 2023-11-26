@@ -1,105 +1,85 @@
-"use-client";
-
-import { Fragment, useEffect, useState } from "react";
-import Image from "next/image";
-
-import GreetAnimation from "@/animations/Greetings.json";
-import Lottie from "lottie-react";
+import { Fragment } from "react";
 
 import Typewriter from "typewriter-effect";
-import AnimatedDiv from "@/layout/AnimatedDiv";
 import { motion } from "framer-motion";
 
 import { data } from "@/data/social";
+import ParticleBackground from "./ParticleBackground";
 
-const Hero = ({ typing, setTyping }) => {
-  const [showRobo, setShowRobo] = useState(false);
-
-  useEffect(() => {
-    !typing &&
-      setTimeout(() => {
-        setShowRobo(true);
-      }, 1000);
-  }, [typing]);
-
+const Hero = ({}) => {
   return (
     <Fragment>
       <div
-        className={`relative z-10 md:h-[500px] h-[400px] flex items-center justify-center md:justify-between md:px-20 px-16 md:pt-32 p-32 pb-0 text-text_light bg-purple transition-all duration-150 ease-out hover:ease-in `}
+        className={`relative z-10 overflow-hidden md:h-[700px] h-[400px] md:px-20 px-16 md:pt-32 p-32 pb-0 transition-all duration-150 ease-out hover:ease-in `}
       >
-        <div className="bg-no-repeat bg-center bg-[url('/blobs.svg')] h-screen w-screen absolute z-10 left-0 opacity-[.1]"></div>
-        <div className="relative z-20">
+        <ParticleBackground />
+
+        <div className="absolute top-0 left-0 flex flex-col items-center justify-center h-full w-full">
           <h1
-            className={`md:text-5xl text-3xl font-semibold md:w-[500px] transform transition-all duration-700 ease-in hover:ease-in ${
-              typing ? "md:translate-x-1/2" : "translate-x-0"
-            }`}
+            className={`text-purple text-center md:text-5xl text-3xl font-semibold md:w-[500px] transform transition-all duration-700 ease-in hover:ease-in`}
           >
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   .changeDelay(100)
-                  .typeString("Hi there, ")
+                  .typeString("/musabiha")
                   .pauseFor(1000)
-                  .typeString("my name is Musabiha")
                   .deleteChars(3)
-                  .typeString("bbiha N")
+                  .typeString("bbiha_n")
                   .deleteChars(7)
-                  .typeString("biha Noor. ")
-                  .pauseFor(1000)
-                  .typeString("I am a frontend dev.")
-                  .callFunction(() => {
-                    setTyping(false);
-                  })
+                  .typeString("biha_noor.")
+                  .callFunction(() => {})
                   .start();
               }}
             />
-            {showRobo && (
-              <div className="flex gap-3 md:justify-start justify-center mt-10">
-                {data.map((x, i) => (
-                  <motion.div
-                    initial={{ opacity: 0, x: -(i * 50) }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                  >
-                    {x.link && (
-                      <a
-                        href={x.link}
-                        className="cursor-pointer hover:text-light_purple transition-all duration-300 ease-in"
-                        target="_blank"
-                      >
-                        {x.icon}
-                      </a>
-                    )}
-                    {x.value && (
-                      <button
-                        onClick={() => copyToClipboard(x.value, x.name)}
-                        className="cursor-pointer hover:text-light_purple transition-all duration-300 ease-in"
-                      >
-                        {x.icon}
-                      </button>
-                    )}
-                  </motion.div>
-                ))}
-              </div>
-            )}
           </h1>
+
+          <hr className="border-black w-[300px] my-5" />
+
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-xl"
+          >
+            Welcome to my page.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-xl text-center mt-2"
+          >
+            I am a frontend developer currently working <br />
+            as a software engineer for
+            <a
+              href="https://www.onetechnologyservices.com/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              OTS.
+            </a>
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="flex gap-3 text-black text-3xl justify-center mt-10"
+          >
+            {data.map((x, i) => (
+              <div>
+                <a
+                  href={x.link}
+                  className="cursor-pointer hover:text-light_purple transition-all duration-300 ease-in"
+                  target="_blank"
+                >
+                  {x.icon}
+                </a>
+              </div>
+            ))}
+          </motion.div>
         </div>
-        {showRobo && (
-          <div className="hidden md:block">
-            <AnimatedDiv>
-              <Lottie animationData={GreetAnimation} />
-            </AnimatedDiv>
-          </div>
-        )}
-      </div>
-      <div className="image-container relative z-[2]">
-        <Image
-          src="/wave-up.svg"
-          alt="wave"
-          width={500}
-          height={300}
-          layout="responsive"
-        />
       </div>
     </Fragment>
   );

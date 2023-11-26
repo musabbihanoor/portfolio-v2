@@ -5,8 +5,8 @@ import React from "react";
 const ProjectList = () => {
   return (
     <div>
-      <div className="bg-cover bg-center bg-[url('/blobs.svg')] h-screen w-screen absolute z-50 left-0 opacity-[.1]"></div>
-      <div className="image-container relative z-[2]">
+      {/* <div className="bg-cover bg-center bg-[url('/blobs.svg')] h-screen w-screen absolute z-50 left-0 opacity-[.1]"></div> */}
+      {/* <div className="image-container relative z-[2]">
         <Image
           src="/wave-down.svg"
           alt="wave"
@@ -14,8 +14,8 @@ const ProjectList = () => {
           height={300}
           layout="responsive"
         />
-      </div>
-      <div className="bg-purple relative z-30">
+      </div> */}
+      <div className="relative z-30">
         {data.map((x, i) => (
           <div className="flex items-center">
             <div className="relative flex-1">
@@ -33,7 +33,7 @@ const ProjectList = () => {
               </div>
             </div>
             <div className="flex-1">
-              <h1 className="text-white text-7xl font-bold">{x.name}</h1>
+              <h1 className="text-purple text-7xl font-bold">{x.name}</h1>
               <div className="flex gap-3 my-3">
                 {x.stack.map((x, i) => (
                   <p className="bg-light_purple px-4 py-1 rounded-full drop-shadow-lg">
@@ -41,14 +41,14 @@ const ProjectList = () => {
                   </p>
                 ))}
               </div>
-              <p className="text-white w-[550px] my-10 text-xl">
+              <p className="text-[#000] w-[550px] my-10 text-xl">
                 {x.description}
               </p>
             </div>
           </div>
         ))}
       </div>
-
+      {/* 
       <div className="image-container relative z-[2]">
         <Image
           src="/wave-up.svg"
@@ -57,7 +57,7 @@ const ProjectList = () => {
           height={300}
           layout="responsive"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
