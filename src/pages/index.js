@@ -6,6 +6,7 @@ import About from "@/components/About";
 import { useState } from "react";
 import ProjectList from "@/components/ProjectList";
 import ParticleBackground from "@/components/ParticleBackground";
+import Contact from "@/components/Contact";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,14 +19,9 @@ export default function Home() {
   return (
     <div className={`${poppins.className}`}>
       <Hero typing={typing} setTyping={setTyping} />
-
-      <div className="bg-white h-full w-screen absolute z-[10]">
-        <div className="bg-[url('/hexagon-bg.svg')] h-full w-full opacity-[.1]"></div>
-      </div>
-
       <About typing={typing} />
-
       <ProjectList />
+      {/* <Contact /> */}
     </div>
   );
 }

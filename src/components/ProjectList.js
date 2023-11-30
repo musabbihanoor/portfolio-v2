@@ -43,7 +43,7 @@ const ProjectList = () => {
                 </p>
               ))}
             </div>
-            <p className="text-[#000] sm:text-start text-center md:w-[550px] md:my-10 py-5 md:text-xl">
+            <p className="text-[#000] sm:text-start text-center md:w-[550px] md:my-10 my-5 md:text-xl">
               {x.description}
             </p>
             <a

@@ -7,7 +7,7 @@ const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    setupTheme();
+    // setupTheme();
   }, []);
 
   const setupTheme = () => {

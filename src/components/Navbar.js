@@ -39,14 +39,14 @@ const Navbar = () => {
           resumé
         </a>
 
-        <button
+        {/* <button
           onClick={toggleTheme}
           className={`bg-light_purple transition-all duration-150 ease-out hover:ease-in h-6 w-10 rounded-full p-1 flex ${
             theme === "light" ? "justify-start" : "justify-end"
           }`}
         >
           <div className="h-4 w-4 bg-purple rounded-full" />
-        </button>
+        </button> */}
       </div>
     </nav>
   );
