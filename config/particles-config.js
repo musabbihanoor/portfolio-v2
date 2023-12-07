@@ -45,7 +45,7 @@ const particlesConfig = {
       enable: true,
       distance: 100,
       color: "#32343E",
-      opacity: 0.5,
+      opacity: 0.7,
       width: 1,
     },
     move: {
@@ -64,6 +64,44 @@ const particlesConfig = {
     },
     array: [],
   },
+  // interactivity: {
+  //   detect_on: "canvas",
+  //   events: {
+  //     onhover: {
+  //       enable: true,
+  //       mode: "push",
+  //     },
+  //     onclick: {
+  //       enable: true,
+  //       mode: "push",
+  //     },
+  //     resize: true,
+  //   },
+  //   modes: {
+  //     grab: {
+  //       distance: 100,
+  //       line_linked: {
+  //         opacity: 0.6,
+  //       },
+  //     },
+  //     bubble: {
+  //       distance: 200,
+  //       size: 80,
+  //       duration: 0.4,
+  //     },
+  //     repulse: {
+  //       distance: 200,
+  //       duration: 0.4,
+  //     },
+  //     push: {
+  //       particles_nb: 4,
+  //     },
+  //     remove: {
+  //       particles_nb: 2,
+  //     },
+  //   },
+  //   mouse: {},
+  // },
   interactivity: {
     detect_on: "canvas",
     events: {
@@ -81,7 +119,7 @@ const particlesConfig = {
       grab: {
         distance: 100,
         line_linked: {
-          opacity: 0.6,
+          opacity: 1,
         },
       },
       bubble: {
