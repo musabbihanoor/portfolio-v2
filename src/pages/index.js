@@ -10,6 +10,7 @@ import Contact from "@/components/Contact";
 
 import posthog from "posthog-js";
 import initPostHog from "@/utils/posthog";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function Home() {
       <About typing={typing} />
       {/* <ProjectList /> */}
       {/* <Contact /> */}
+      <Footer />
     </div>
   );
 }
