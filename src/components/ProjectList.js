@@ -39,9 +39,12 @@ const ProjectList = () => {
             <h1 className="text-purple md:text-7xl text-3xl font-bold">
               {x.name}
             </h1>
-            <div key={i} className="flex gap-3 my-3">
+            <div className="flex gap-3 my-3">
               {x.stack.map((x, i) => (
-                <p className="bg-light_purple px-4 py-1 md:text-base text-xs rounded-full drop-shadow-lg">
+                <p
+                  key={i}
+                  className="bg-light_purple px-4 py-1 md:text-base text-xs rounded-full drop-shadow-lg"
+                >
                   {x}
                 </p>
               ))}
