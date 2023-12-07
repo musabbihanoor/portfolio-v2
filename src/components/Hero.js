@@ -13,7 +13,6 @@ const Hero = ({}) => {
         className={`relative z-10 overflow-hidden flex flex-col items-center justify-center md:h-[700px] h-[600px] md:px-20 px-16 md:pt-32 py-10 pb-0 transition-all duration-150 ease-out hover:ease-in `}
       >
         <ParticleBackground />
-
         <h1
           className={`text-purple text-center md:text-5xl text-3xl font-semibold md:w-[500px] transform transition-all duration-700 ease-in hover:ease-in`}
         >
@@ -80,14 +79,14 @@ const Hero = ({}) => {
           ))}
         </motion.div>
 
-        <a
+        {/* <a
           target="_blank"
           rel="noreferrer"
           href="#about"
           className="mt-10 border-2 border-purple text-lg px-6 py-2 rounded-lg text-purple hover:text-white hover:bg-purple transition-all"
         >
           Visit
-        </a>
+        </a> */}
       </div>
     </Fragment>
   );

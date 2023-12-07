@@ -24,37 +24,91 @@ const About = () => {
             / about_me
           </h1>
         </div>
+
         <p className="md:w-[550px] w-full text-lg">
-          I started my journey as a frontend developer in 2021 and proceeded to
-          specialize in{" "}
+          Hey, I am Musabbiha. I am from Karachi, Pakistan. I am a{" "}
           <span className="dark:text-light_purple text-purple">
-            frontend development
+            Software Engineer
           </span>{" "}
-          with experties in{" "}
-          <span className="dark:text-light_purple text-purple">React JS</span>.
-          I love creating cool stuff that looks great and is easy to use. My
-          focus is on making interfaces that are both visually stunning and
-          user-friendly. I&apos;ve worked on multiple of projects, from small
-          websites to big{" "}
+          by profession and I love to code. My love for coding started back in{" "}
+          <span className="dark:text-light_purple text-purple">2017</span> when
+          I started learning C++. I loved the creativity programming brought and
+          found algorithm writing to be quite an artistic process. I enjoyed
+          coming up with different solutions to solve different problems.
+          <br />
+          <br />I got enrolled in{" "}
           <span className="dark:text-light_purple text-purple">
-            web applications
+            Bahria University
           </span>{" "}
-          and{" "}
+          in <span className="dark:text-light_purple text-purple">2018</span> as
+          a{" "}
           <span className="dark:text-light_purple text-purple">
-            mobile applications
+            Computer Science
+          </span>{" "}
+          major and graduated with honors in{" "}
+          <span className="dark:text-light_purple text-purple">2022</span>.
+          During my final year I got the chance to work on an{" "}
+          <a
+            href="https://www.goddard-discovery.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="dark:text-light_purple text-purple font-semibold hover:underline cursor-pointer"
+          >
+            AI based product
+          </a>{" "}
+          as an internee. Fast forward to today, I have had a priviledge for
+          working with an{" "}
+          <a
+            href="https://codebusterspro.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="dark:text-light_purple text-purple font-semibold hover:underline cursor-pointer"
+          >
+            alumini-led startup
+          </a>
+          , a{" "}
+          <a
+            href="https://www.dotsnpix.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="dark:text-light_purple text-purple font-semibold hover:underline cursor-pointer"
+          >
+            UX/UI Design Agency
+          </a>{" "}
+          and a{" "}
+          <a
+            href="https://fotodino-events.de/"
+            target="_blank"
+            rel="noreferrer"
+            className="dark:text-light_purple text-purple font-semibold hover:underline cursor-pointer"
+          >
+            photography studio
+          </a>
+          .
+          <br />
+          <br />
+          My main focus these days is working in the product team at{" "}
+          <a
+            href="https://www.onetechnologyservices.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="dark:text-light_purple text-purple font-semibold hover:underline cursor-pointer"
+          >
+            OTS
+          </a>{" "}
+          as a{" "}
+          <span className="dark:text-light_purple text-purple">
+            frontend developer
           </span>
           . You can download my complete resumé from{" "}
           <a
-            className="dark:text-light_purple text-purple font-semibold underline cursor-pointer"
+            className="dark:text-light_purple text-purple font-semibold hover:underline cursor-pointer cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
             here
           </a>
-          .
-          <br />
-          <br />
-          Here are few technologies I have been working with recently,
+          . Here are few technologies I have been working with recently,
         </p>
 
         <div className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-5">

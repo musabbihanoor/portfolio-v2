@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ProjectList from "@/components/ProjectList";
 import ParticleBackground from "@/components/ParticleBackground";
 import Contact from "@/components/Contact";
@@ -20,7 +20,7 @@ export default function Home() {
     <div className={`${poppins.className}`}>
       <Hero typing={typing} setTyping={setTyping} />
       <About typing={typing} />
-      <ProjectList />
+      {/* <ProjectList /> */}
       {/* <Contact /> */}
     </div>
   );

@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 40) {
-      setNavbarColor("bg-purple/50");
+      setNavbarColor("bg-[#f8f8f8]/20");
     } else {
       setNavbarColor("bg-transparent");
     }
