@@ -7,7 +7,7 @@ import AnimatedDiv from "@/layout/AnimatedDiv";
 
 const About = () => {
   return (
-    <div className="bg-[#f8f8f8] relative z-10 flex items-start justify-center md:px-20 sm:py-40 p-10">
+    <div className="bg-[#f8f8f8] relative z-10 flex items-start justify-center md:px-20 sm:py-40 p-6">
       <div className="hidden md:block">
         <AnimatedDiv>
           <Lottie animationData={GreetingAnimation} />

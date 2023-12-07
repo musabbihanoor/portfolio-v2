@@ -34,7 +34,7 @@ const Navbar = () => {
           alt="icon"
           className="h-7 w-7"
         />
-        <h1 className="md:text-2xl font-semibold">/ musabbiha_noor</h1>
+        <h1 className="md:block hidden font-semibold">/ musabbiha_noor</h1>
       </div>
       <div className="flex gap-5">
         <a
