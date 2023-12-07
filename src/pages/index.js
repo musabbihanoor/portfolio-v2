@@ -3,10 +3,13 @@ import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProjectList from "@/components/ProjectList";
 import ParticleBackground from "@/components/ParticleBackground";
 import Contact from "@/components/Contact";
+
+import posthog from "posthog-js";
+import initPostHog from "@/utils/posthog";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +18,11 @@ const poppins = Poppins({
 
 export default function Home() {
   const [typing, setTyping] = useState(true);
+
+  useEffect(() => {
+    initPostHog();
+    posthog.capture("my event", { property: "value" });
+  }, []);
 
   return (
     <div className={`${poppins.className}`}>
