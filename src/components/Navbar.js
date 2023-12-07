@@ -1,5 +1,6 @@
 import { useTheme } from "@/context/theme";
 import { RESUME_LINK } from "@/data/constant";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -26,7 +27,13 @@ const Navbar = () => {
       className={`${navbarColor} fixed flex justify-between w-full text-black md:p-8 p-5 text-xl z-50 transition-all duration-300 ease-in`}
     >
       <div className="flex items-center gap-3">
-        <img src="/robo-icon.svg" alt="icon" className="h-7 w-7" />
+        <Image
+          height={50}
+          width={50}
+          src="/robo-icon.svg"
+          alt="icon"
+          className="h-7 w-7"
+        />
         <h1 className="md:text-2xl font-semibold">/ musabbiha_noor</h1>
       </div>
       <div className="flex gap-5">

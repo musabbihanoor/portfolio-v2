@@ -142,7 +142,7 @@ const About = () => {
         <p className="md:w-[550px] w-full text-lg">
           In my spare time I love to play games. I am enjoying{" "}
           <span className="dark:text-light_purple text-purple">
-            Assasin's Creed
+            Assasin&apos;s Creed
           </span>{" "}
           and{" "}
           <span className="dark:text-light_purple text-purple">

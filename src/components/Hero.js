@@ -67,7 +67,7 @@ const Hero = ({}) => {
           className="flex gap-3 text-black text-3xl justify-center mt-10"
         >
           {data.map((x, i) => (
-            <div>
+            <div key={i}>
               <a
                 href={x.link}
                 className="cursor-pointer hover:text-light_purple transition-all duration-300 ease-in"

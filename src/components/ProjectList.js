@@ -12,12 +12,15 @@ const ProjectList = () => {
       </h1>
 
       <p className="text-center my-5 text-xl">
-        Here's few of my favorite projects
+        Here&apos;s few of my favorite projects
       </p>
       <hr className="mt-5 mb-10" />
 
       {data.map((x, i) => (
-        <div className="flex sm:flex-row flex-col items-center sm:gap-10 sm:mb-0 mb-20">
+        <div
+          key={i}
+          className="flex sm:flex-row flex-col items-center sm:gap-10 sm:mb-0 mb-20"
+        >
           <div className="relative flex-1">
             <div className="image-container relative z-[2]">
               <Image
@@ -36,7 +39,7 @@ const ProjectList = () => {
             <h1 className="text-purple md:text-7xl text-3xl font-bold">
               {x.name}
             </h1>
-            <div className="flex gap-3 my-3">
+            <div key={i} className="flex gap-3 my-3">
               {x.stack.map((x, i) => (
                 <p className="bg-light_purple px-4 py-1 md:text-base text-xs rounded-full drop-shadow-lg">
                   {x}
