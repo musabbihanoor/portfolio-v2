@@ -45,7 +45,7 @@ const About = () => {
           <span className="dark:text-light_purple text-purple">
             Computer Science
           </span>{" "}
-          major and graduated with honors in{" "}
+          major and graduated with Honors in{" "}
           <span className="dark:text-light_purple text-purple">2022</span>.
           During my final year I got the chance to work on an{" "}
           <a
@@ -56,7 +56,7 @@ const About = () => {
           >
             AI based product
           </a>{" "}
-          as an internee. Fast forward to today, I have had a priviledge for
+          as an internee. Fast forward to today, I have had a priviledge of
           working with an{" "}
           <a
             href="https://codebusterspro.com/"
@@ -108,26 +108,13 @@ const About = () => {
           >
             here
           </a>
-          . Here are few technologies I have been working with recently,
+          . These are few technologies I have been working with recently,
         </p>
 
         <div className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-5">
           <span className="flex items-center gap-2">
             <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            JavaScript
-          </span>
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            TypeScript
-          </span>
-
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
             React
-          </span>
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            Next JS
           </span>
           <span className="flex items-center gap-2">
             <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
@@ -136,6 +123,18 @@ const About = () => {
           <span className="flex items-center gap-2">
             <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
             Angular
+          </span>
+          <span className="flex items-center gap-2">
+            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
+            Next JS
+          </span>
+          <span className="flex items-center gap-2">
+            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
+            JavaScript
+          </span>
+          <span className="flex items-center gap-2">
+            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
+            TypeScript
           </span>
         </div>
         <br />
