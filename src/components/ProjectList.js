@@ -6,7 +6,10 @@ import { LuExternalLink } from "react-icons/lu";
 
 const ProjectList = () => {
   return (
-    <div className="relative z-30 bg-white sm:p-20 p-5 py-10">
+    <section
+      id="portfolio"
+      className="relative z-30 bg-white sm:p-20 p-5 py-10"
+    >
       <div className="left-0 top-0 bg-white bg-[url('/hexagon-bg.svg')] absolute z-[-1] h-full w-screen opacity-[.1]"></div>
 
       <h1 className="text-3xl text-center font-semibold dark:text-light_purple text-purple mb-5">
@@ -72,7 +75,7 @@ const ProjectList = () => {
           </div>
         </div>
       ))} */}
-    </div>
+    </section>
   );
 };
 

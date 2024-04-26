@@ -8,7 +8,10 @@ import { TECH_STACK } from "@/data/constant";
 
 const About = () => {
   return (
-    <div className="bg-[#fff] relative z-10 flex items-start justify-center md:px-20 sm:py-40 p-6">
+    <section
+      id="about"
+      className="bg-[#fff] relative z-10 flex items-start justify-center md:px-20 sm:py-40 p-6"
+    >
       <div className="left-0 top-0 bg-white bg-[url('/hexagon-bg.svg')] absolute z-[-1] h-full w-screen opacity-[.1]"></div>
       <div className="hidden md:block">
         <AnimatedDiv>
@@ -136,7 +139,7 @@ const About = () => {
           spend time with my family.
         </p>
       </AnimatedDiv>
-    </div>
+    </section>
   );
 };
 

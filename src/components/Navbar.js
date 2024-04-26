@@ -38,7 +38,19 @@ const Navbar = () => {
       </div>
       <div className="flex gap-5">
         <a
-          className="mt-[-2px] underline cursor-pointer hover:text-light_purple transition-all duration-300 ease-in "
+          className="mt-[-2px] cursor-pointer hover:text-purple transition-all duration-300 ease-in "
+          href="#about"
+        >
+          about
+        </a>
+        <a
+          className="mt-[-2px] cursor-pointer hover:text-purple transition-all duration-300 ease-in "
+          href="#portfolio"
+        >
+          portfolio
+        </a>
+        <a
+          className="mt-[-2px] cursor-pointer hover:text-purple transition-all duration-300 ease-in "
           href={RESUME_LINK}
           target="_blank"
           rel="noreferrer"
