@@ -88,7 +88,7 @@ const About = () => {
           .
           <br />
           <br />
-          My main focus these days is working in the product team at{" "}
+          {/* My main focus these days is working in the product team at{" "}
           <a
             href="https://www.onetechnologyservices.com/"
             target="_blank"
@@ -101,7 +101,8 @@ const About = () => {
           <span className="dark:text-light_purple text-purple">
             frontend developer
           </span>
-          . You can download my complete resumé from{" "}
+          .  */}
+          You can download my complete resumé from{" "}
           <a
             className="dark:text-light_purple text-purple font-semibold hover:underline cursor-pointer cursor-pointer"
             target="_blank"

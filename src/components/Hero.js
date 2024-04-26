@@ -48,16 +48,20 @@ const Hero = ({}) => {
           transition={{ duration: 1 }}
           className="text-xl text-center mt-2"
         >
-          I am a frontend developer currently working <br />
-          as a software engineer for{" "}
-          <a
+          Hey, I am a software engineer with a <br />
+          focus on{" "}
+          <span className="text-purple font-semibold">
+            frontend development
+          </span>
+          .
+          {/* <a
             href="https://www.onetechnologyservices.com/"
             rel="noreferrer"
             target="_blank"
             className="text-purple font-semibold hover:underline"
           >
             OTS.
-          </a>
+          </a> */}
         </motion.p>
 
         <motion.div
