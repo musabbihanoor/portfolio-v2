@@ -1,22 +1,31 @@
 import { data } from "@/data/projects";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { CiFolderOn } from "react-icons/ci";
+import { LuExternalLink } from "react-icons/lu";
 
 const ProjectList = () => {
   return (
     <div className="relative z-30 bg-white sm:p-20 p-5 py-10">
       <div className="left-0 top-0 bg-white bg-[url('/hexagon-bg.svg')] absolute z-[-1] h-full w-screen opacity-[.1]"></div>
 
-      <h1 className="sm:text-5xl text-3xl text-purple font-semibold text-center">
+      <h1 className="text-3xl text-center font-semibold dark:text-light_purple text-purple mb-5">
         /portfolio
       </h1>
 
-      <p className="text-center my-5 text-xl">
-        Here&apos;s few of my favorite projects
+      <p className="my-5 text-center text-lg">
+        Here&apos;s some of my note-worthy projects
       </p>
-      <hr className="mt-5 mb-10" />
 
-      {data.map((x, i) => (
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-10 my-20">
+        {data.map((x, i) => (
+          <Project project={x} key={i} />
+        ))}
+      </div>
+
+      {/* <hr className="mt-5 mb-10" /> */}
+
+      {/* {data.map((x, i) => (
         <div
           key={i}
           className="flex sm:flex-row flex-col items-center sm:gap-10 sm:mb-0 mb-20"
@@ -62,9 +71,52 @@ const ProjectList = () => {
             </a>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
 
 export default ProjectList;
+
+const Project = ({
+  project: { name, description, url, stack, association },
+}) => {
+  return (
+    <div className="flex flex-col gap-2 rounded-lg p-5 bg-white drop-shadow-lg transition duration-300 hover:translate-y-[-10px]">
+      <div className="flex justify-between">
+        <CiFolderOn className="text-3xl text-purple" />
+        <a
+          target="_blank"
+          href={url}
+          className="text-xl text-purple hover:text-black transition duration-300"
+        >
+          <LuExternalLink />
+        </a>
+      </div>
+      <div className="flex-1">
+        <h1 className="font-semibold text-lg">{name}</h1>
+
+        <p className="text-sm my-3">{description}</p>
+      </div>
+      <div>
+        {association && (
+          <p className="text-xs text-right mb-2">
+            Associated with:{" "}
+            <a
+              className="text-purple text-semibold underline"
+              target="_blank"
+              href={association[1]}
+            >
+              {association[0]}
+            </a>
+          </p>
+        )}
+        <div className="w-full flex flex-wrap gap-3 text-xs text-purple">
+          {stack.map((y) => (
+            <span className="">{y}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};

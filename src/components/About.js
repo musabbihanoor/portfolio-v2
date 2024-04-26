@@ -4,6 +4,7 @@ import GreetingAnimation from "@/animations/Greetings.json";
 import { AiFillCaretRight } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AnimatedDiv from "@/layout/AnimatedDiv";
+import { TECH_STACK } from "@/data/constant";
 
 const About = () => {
   return (
@@ -114,30 +115,12 @@ const About = () => {
         </p>
 
         <div className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-5">
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            React
-          </span>
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            React Native
-          </span>
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            Angular
-          </span>
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            Next JS
-          </span>
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            JavaScript
-          </span>
-          <span className="flex items-center gap-2">
-            <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
-            TypeScript
-          </span>
+          {TECH_STACK.map((x) => (
+            <span key={x} className="flex items-center gap-2">
+              <AiFillCaretRight className="text-xs dark:text-light_purple text-purple" />{" "}
+              {x}
+            </span>
+          ))}
         </div>
         <br />
         <p className="md:w-[550px] w-full text-lg">

@@ -29,7 +29,7 @@ export default function Home() {
     <div className={`${poppins.className}`}>
       <Hero typing={typing} setTyping={setTyping} />
       <About typing={typing} />
-      {/* <ProjectList /> */}
+      <ProjectList />
       {/* <Contact /> */}
       <Footer />
     </div>
