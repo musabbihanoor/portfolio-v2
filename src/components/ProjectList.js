@@ -116,7 +116,7 @@ const Project = ({
         )}
         <div className="w-full flex flex-wrap gap-3 text-xs text-purple">
           {stack.map((y) => (
-            <span className="">{y}</span>
+            <span key={y}>{y}</span>
           ))}
         </div>
       </div>
